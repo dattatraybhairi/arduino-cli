@@ -8,7 +8,6 @@
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
         <meta name="description" content="Arduino Command Line Interface">
       
@@ -16,27 +15,8 @@
         <link rel="canonical" href="https://arduino.github.io/arduino-cli/getting-started/">
       
       
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
+      <link rel="shortcut icon" href="..">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
     
     
       
@@ -44,27 +24,24 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7533c066.min.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ff0a5ce4.min.css">
       
       
         
         
-        <meta name="theme-color" content="#009688">
+        <meta name="theme-color" content="#009485">
       
     
-    
-      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
       <link rel="stylesheet" href="../css/version-select.css">
@@ -75,145 +52,62 @@
     
   </head>
   
-    
-    
-    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="orange">
   
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="orange">
+  
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#before-you-start" tabindex="0" class="md-skip">
-        Skip to content
-      </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://arduino.github.io/arduino-cli/" title="Arduino CLI" aria-label="Arduino CLI" class="md-header-nav__button md-logo">
-          
-            <img alt="logo" src="../img/icon_mac_light.png" width="24" height="24">
-          
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#before-you-start" class="md-skip">
+          Skip to content
         </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
-              Arduino CLI
-            </span>
-            <span class="md-header-nav__topic">
-              
-                Getting started
-              
-            </span>
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
-
-
-  
-
-<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
-  <div class="md-source__repository">
-    arduino/arduino-cli
-  </div>
-</a>
-          </div>
-        </div>
       
     </div>
-  </nav>
-</header>
+    <div data-md-component="announce">
+      
+    </div>
     
-    <div class="md-container">
+    <div id="arduino-header" class="temporary">
+    </div>
+    
+    <div class="md-container" data-md-component="container">
       
         
       
       
-      <main class="md-main" role="main">
-        <div class="md-main__inner md-grid" data-md-component="container">
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
           
             
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://arduino.github.io/arduino-cli/" title="Arduino CLI" class="md-nav__button md-logo">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://arduino.github.io/arduino-cli/" title="Arduino CLI" class="md-nav__button md-logo" aria-label="Arduino CLI">
       
-        <img alt="logo" src="../img/icon_mac_light.png" width="48" height="48">
-      
+  <img src="../img/icon_mac_light.png" alt="logo">
+
     </a>
     Arduino CLI
   </label>
   
     <div class="md-nav__source">
       
-
-
-  
-
-<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
   <div class="md-source__repository">
     arduino/arduino-cli
   </div>
@@ -255,11 +149,12 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Getting started
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" title="Getting started" class="md-nav__link md-nav__link--active">
@@ -267,11 +162,14 @@
     </a>
     
       
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -337,10 +235,6 @@
   
 </li>
       
-      
-      
-      
-      
     </ul>
   
 </nav>
@@ -391,13 +285,15 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       Command reference
+      <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="Command reference" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
         Command reference
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -895,13 +791,15 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
     <label class="md-nav__link" for="nav-8">
       gRPC reference
+      <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+    <nav class="md-nav" aria-label="gRPC reference" data-md-level="1">
       <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
         gRPC reference
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1055,11 +953,14 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -1125,10 +1026,6 @@
   
 </li>
       
-      
-      
-      
-      
     </ul>
   
 </nav>
@@ -1142,6 +1039,9 @@
               
                 
                 
+                  
+                
+                
                   <h1>Getting started</h1>
                 
                 <p>Despite the lack of feature parity at the moment, Arduino CLI provides many of the features you can find in the Arduino
@@ -1149,102 +1049,94 @@ IDE. Let's see some examples.</p>
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
 <p><code>arduino-cli</code> is a container of commands and each command has its own dedicated help text that can be shown with the
 <code>help</code> command like this:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">$</span> arduino-cli <span class="nb">help</span> core
-<span class="go">Arduino Core operations.</span>
+<pre class="highlight"><code class="language-console">$ arduino-cli help core
+Arduino Core operations.
 
-<span class="go">Usage:</span>
-<span class="go">    arduino-cli core [command]</span>
+Usage:
+    arduino-cli core [command]
 
-<span class="go">Examples:</span>
-<span class="go">    ./arduino-cli core update-index</span>
+Examples:
+    ./arduino-cli core update-index
 
-<span class="go">Available Commands:</span>
-<span class="go">    download     Downloads one or more cores and corresponding tool dependencies.</span>
-<span class="go">    install      Installs one or more cores and corresponding tool dependencies.</span>
-<span class="go">    list         Shows the list of installed platforms.</span>
-<span class="go">    search       Search for a core in Boards Manager.</span>
-<span class="go">    uninstall    Uninstalls one or more cores and corresponding tool dependencies if no more used.</span>
-<span class="go">    update-index Updates the index of cores.</span>
-<span class="go">    upgrade      Upgrades one or all installed platforms to the latest version.</span>
+Available Commands:
+    download     Downloads one or more cores and corresponding tool dependencies.
+    install      Installs one or more cores and corresponding tool dependencies.
+    list         Shows the list of installed platforms.
+    search       Search for a core in Boards Manager.
+    uninstall    Uninstalls one or more cores and corresponding tool dependencies if no more used.
+    update-index Updates the index of cores.
+    upgrade      Upgrades one or all installed platforms to the latest version.
 
-<span class="go">Flags:</span>
-<span class="go">    -h, --help   help for core</span>
+Flags:
+    -h, --help   help for core
 
-<span class="go">Global Flags:</span>
-<span class="go">        --additional-urls strings   Additional URLs for Boards Manager.</span>
-<span class="go">        --config-file string        The custom config file (if not specified the default will be used).</span>
-<span class="go">        --format string             The output format, can be [text|json]. (default &quot;text&quot;)</span>
-<span class="go">        --log-file string           Path to the file where logs will be written.</span>
-<span class="go">        --log-format string         The output format for the logs, can be [text|json].</span>
-<span class="go">        --log-level string          Messages with this level and above will be logged.</span>
-<span class="go">    -v, --verbose                   Print the logs on the standard output.</span>
+Global Flags:
+        --additional-urls strings   Additional URLs for Boards Manager.
+        --config-file string        The custom config file (if not specified the default will be used).
+        --format string             The output format, can be [text|json]. (default "text")
+        --log-file string           Path to the file where logs will be written.
+        --log-format string         The output format for the logs, can be [text|json].
+        --log-level string          Messages with this level and above will be logged.
+    -v, --verbose                   Print the logs on the standard output.
 
-<span class="go">Use &quot;arduino-cli core [command] --help&quot; for more information about a command.</span>
-</code></pre></div>
+Use "arduino-cli core [command] --help" for more information about a command.</code></pre>
 <h2 id="create-a-configuration-file">Create a configuration file<a class="headerlink" href="#create-a-configuration-file" title="Permanent link">&para;</a></h2>
 <p>Arduino CLI doesn't strictly require a configuration file to work because the command line interface provides any
 possible functionality. However, having one can spare you a lot of typing when issuing a command, so let's go ahead and
 create it with:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli config init
-Config file written: /home/luca/.arduino15/arduino-cli.yaml
-</code></pre></div>
+<pre class="highlight"><code class="language-sh">$ arduino-cli config init
+Config file written: /home/luca/.arduino15/arduino-cli.yaml</code></pre>
 <p>If you inspect the contents of <code>arduino-cli.yaml</code>, you'll find the available options with their respective default
 values. For more information, see the <a href="../configuration/">configuration documentation</a>.</p>
 <h2 id="create-a-new-sketch">Create a new sketch<a class="headerlink" href="#create-a-new-sketch" title="Permanent link">&para;</a></h2>
 <p>To create a new sketch named <code>MyFirstSketch</code> in the current directory, run the following command:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli sketch new MyFirstSketch
-Sketch created in: /home/luca/MyFirstSketch
-</code></pre></div>
+<pre class="highlight"><code class="language-sh">$ arduino-cli sketch new MyFirstSketch
+Sketch created in: /home/luca/MyFirstSketch</code></pre>
 <p>A sketch is a folder containing assets like source files and libraries; the <code>new</code> command creates for you a .ino file
 called <code>MyFirstSketch.ino</code> containing Arduino boilerplate code:</p>
-<div class="highlight"><pre><span></span><code>$ cat <span class="nv">$HOME</span>/MyFirstSketch/MyFirstSketch.ino
-void setup<span class="o">()</span> <span class="o">{</span>
-<span class="o">}</span>
+<pre class="highlight"><code class="language-sh">$ cat $HOME/MyFirstSketch/MyFirstSketch.ino
+void setup() {
+}
 
-void loop<span class="o">()</span> <span class="o">{</span>
-<span class="o">}</span>
-</code></pre></div>
+void loop() {
+}</code></pre>
 <p>At this point you can use your favourite file editor or IDE to open the file <code>$HOME/MyFirstSketch/MyFirstSketch.ino</code> and
 change the code like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
-<span class="p">}</span>
+<pre class="highlight"><code class="language-c">void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
 
-<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}</code></pre>
 <h2 id="connect-the-board-to-your-pc">Connect the board to your PC<a class="headerlink" href="#connect-the-board-to-your-pc" title="Permanent link">&para;</a></h2>
 <p>The first thing to do upon a fresh install is to update the local cache of available platforms and libraries by running:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli core update-index
-Updating index: package_index.json downloaded
-</code></pre></div>
+<pre class="highlight"><code class="language-sh">$ arduino-cli core update-index
+Updating index: package_index.json downloaded</code></pre>
 <p>After connecting the board to your PC by using the USB cable, you should be able to check whether it's been recognized
 by running:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli board list
+<pre class="highlight"><code class="language-sh">$ arduino-cli board list
 Port         Type              Board Name              FQBN                 Core
-/dev/ttyACM1 Serial Port <span class="o">(</span>USB<span class="o">)</span> Arduino/Genuino MKR1000 arduino:samd:mkr1000 arduino:samd
-</code></pre></div>
+/dev/ttyACM1 Serial Port (USB) Arduino/Genuino MKR1000 arduino:samd:mkr1000 arduino:samd</code></pre>
 <p>In this example, the MKR1000 board was recognized and from the output of the command you see the platform core called
 <code>arduino:samd</code> is the one that needs to be installed to make it work.</p>
 <p>If you see an <code>Unknown</code> board listed, uploading should still work as long as you identify the platform core and use the
 correct FQBN string. When a board is not detected for whatever reason, you can list all the supported boards and their
 FQBN strings by running the following:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli board listall mkr
+<pre class="highlight"><code class="language-sh">$ arduino-cli board listall mkr
 Board Name              FQBN
-Arduino MKR FOX <span class="m">1200</span>    arduino:samd:mkrfox1200
-Arduino MKR GSM <span class="m">1400</span>    arduino:samd:mkrgsm1400
-Arduino MKR WAN <span class="m">1300</span>    arduino:samd:mkrwan1300
-Arduino MKR WiFi <span class="m">1010</span>   arduino:samd:mkrwifi1010
+Arduino MKR FOX 1200    arduino:samd:mkrfox1200
+Arduino MKR GSM 1400    arduino:samd:mkrgsm1400
+Arduino MKR WAN 1300    arduino:samd:mkrwan1300
+Arduino MKR WiFi 1010   arduino:samd:mkrwifi1010
 Arduino MKRZERO         arduino:samd:mkrzero
-Arduino/Genuino MKR1000 arduino:samd:mkr1000
-</code></pre></div>
+Arduino/Genuino MKR1000 arduino:samd:mkr1000</code></pre>
 <h2 id="install-the-core-for-your-board">Install the core for your board<a class="headerlink" href="#install-the-core-for-your-board" title="Permanent link">&para;</a></h2>
 <p>To install the <code>arduino:samd</code> platform core, run the following:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli core install arduino:samd
+<pre class="highlight"><code class="language-sh">$ arduino-cli core install arduino:samd
 Downloading tools...
 arduino:arm-none-eabi-gcc@4.8.3-2014q1 downloaded
 arduino:bossac@1.7.0 downloaded
@@ -1263,123 +1155,114 @@ arduino:bossac@1.7.0 - Installed
 arduino:openocd@0.9.0-arduino6-static - Installed
 arduino:CMSIS@4.5.0 - Installed
 arduino:CMSIS-Atmel@1.1.0 - Installed
-arduino:arduinoOTA@1.2.0 - Installed
-</code></pre></div>
+arduino:arduinoOTA@1.2.0 - Installed</code></pre>
 <p>Now verify we have installed the core properly by running:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli core list
+<pre class="highlight"><code class="language-sh">$ arduino-cli core list
 ID              Installed       Latest  Name
-arduino:samd    <span class="m">1</span>.6.19          <span class="m">1</span>.6.19  Arduino SAMD Boards <span class="o">(</span><span class="m">32</span>-bits ARM Cortex-M0+<span class="o">)</span>
-</code></pre></div>
+arduino:samd    1.6.19          1.6.19  Arduino SAMD Boards (32-bits ARM Cortex-M0+)</code></pre>
 <p>Great! Now we are ready to compile and upload the sketch.</p>
 <h2 id="adding-3rd-party-cores">Adding 3<sup>rd</sup> party cores<a class="headerlink" href="#adding-3rd-party-cores" title="Permanent link">&para;</a></h2>
 <p>If your board requires 3<sup>rd</sup> party core packages to work, you can list the URLs to additional package indexes in the
 Arduino CLI configuration file.</p>
 <p>For example, to add the ESP8266 core, edit the configuration file and change the <code>board_manager</code> settings as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">board_manager</span><span class="p">:</span>
-  <span class="nt">additional_urls</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://arduino.esp8266.com/stable/package_esp8266com_index.json</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">board_manager:
+  additional_urls:
+    - https://arduino.esp8266.com/stable/package_esp8266com_index.json</code></pre>
 <p>From now on, commands supporting custom cores will automatically use the additional URL from the configuration file:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli core update-index
+<pre class="highlight"><code class="language-sh">$ arduino-cli core update-index
 Updating index: package_index.json downloaded
 Updating index: package_esp8266com_index.json downloaded
 Updating index: package_index.json downloaded
 
 $ arduino-cli core search esp8266
 ID              Version Name
-esp8266:esp8266 <span class="m">2</span>.5.2   esp8266
-</code></pre></div>
+esp8266:esp8266 2.5.2   esp8266</code></pre>
 <p>Alternatively, you can pass a link to the additional package index file with the <code>--additional-urls</code> option, that has to
 be specified every time and for every command that operates on a 3<sup>rd</sup> party platform core, for example:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli  core update-index --additional-urls https://arduino.esp8266.com/stable/package_esp8266com_index.json
+<pre class="highlight"><code class="language-sh">$ arduino-cli  core update-index --additional-urls https://arduino.esp8266.com/stable/package_esp8266com_index.json
 Updating index: package_esp8266com_index.json downloaded
 
 $ arduino-cli core search esp8266 --additional-urls https://arduino.esp8266.com/stable/package_esp8266com_index.json
 ID              Version Name
-esp8266:esp8266 <span class="m">2</span>.5.2   esp8266
-</code></pre></div>
+esp8266:esp8266 2.5.2   esp8266</code></pre>
 <h2 id="compile-and-upload-the-sketch">Compile and upload the sketch<a class="headerlink" href="#compile-and-upload-the-sketch" title="Permanent link">&para;</a></h2>
 <p>To compile the sketch you run the <code>compile</code> command, passing the proper FQBN string:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli compile --fqbn arduino:samd:mkr1000 MyFirstSketch
-Sketch uses <span class="m">9600</span> bytes <span class="o">(</span><span class="m">3</span>%<span class="o">)</span> of program storage space. Maximum is <span class="m">262144</span> bytes.
-</code></pre></div>
+<pre class="highlight"><code class="language-sh">$ arduino-cli compile --fqbn arduino:samd:mkr1000 MyFirstSketch
+Sketch uses 9600 bytes (3%) of program storage space. Maximum is 262144 bytes.</code></pre>
 <p>To upload the sketch to your board, run the following command, using the serial port your board is connected to:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkr1000 MyFirstSketch
+<pre class="highlight"><code class="language-sh">$ arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:samd:mkr1000 MyFirstSketch
 No new serial port detected.
 Atmel SMART device 0x10010005 found
 Device       : ATSAMD21G18A
-Chip ID      : <span class="m">10010005</span>
-Version      : v2.0 <span class="o">[</span>Arduino:XYZ<span class="o">]</span> Dec <span class="m">20</span> <span class="m">2016</span> <span class="m">15</span>:36:43
-Address      : <span class="m">8192</span>
-Pages        : <span class="m">3968</span>
-Page Size    : <span class="m">64</span> bytes
+Chip ID      : 10010005
+Version      : v2.0 [Arduino:XYZ] Dec 20 2016 15:36:43
+Address      : 8192
+Pages        : 3968
+Page Size    : 64 bytes
 Total Size   : 248KB
-Planes       : <span class="m">1</span>
-Lock Regions : <span class="m">16</span>
+Planes       : 1
+Lock Regions : 16
 Locked       : none
-Security     : <span class="nb">false</span>
-Boot Flash   : <span class="nb">true</span>
-BOD          : <span class="nb">true</span>
-BOR          : <span class="nb">true</span>
+Security     : false
+Boot Flash   : true
+BOD          : true
+BOR          : true
 Arduino      : FAST_CHIP_ERASE
 Arduino      : FAST_MULTI_PAGE_WRITE
 Arduino      : CAN_CHECKSUM_MEMORY_BUFFER
 Erase flash
-<span class="k">done</span> in <span class="m">0</span>.784 seconds
+done in 0.784 seconds
 
-Write <span class="m">9856</span> bytes to flash <span class="o">(</span><span class="m">154</span> pages<span class="o">)</span>
-<span class="o">[==============================]</span> <span class="m">100</span>% <span class="o">(</span><span class="m">154</span>/154 pages<span class="o">)</span>
-<span class="k">done</span> in <span class="m">0</span>.069 seconds
+Write 9856 bytes to flash (154 pages)
+[==============================] 100% (154/154 pages)
+done in 0.069 seconds
 
-Verify <span class="m">9856</span> bytes of flash with checksum.
+Verify 9856 bytes of flash with checksum.
 Verify successful
-<span class="k">done</span> in <span class="m">0</span>.009 seconds
-CPU reset.
-</code></pre></div>
+done in 0.009 seconds
+CPU reset.</code></pre>
 <h2 id="add-libraries">Add libraries<a class="headerlink" href="#add-libraries" title="Permanent link">&para;</a></h2>
 <p>If you need to add more functionalities to your sketch, chances are some of the libraries available in the Arduino
 ecosystem already provide what you need. For example, if you need a debouncing strategy to better handle button inputs,
 you can try searching for the <code>debouncer</code> keyword:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli lib search debouncer
-Name: <span class="s2">&quot;Debouncer&quot;</span>
+<pre class="highlight"><code class="language-sh">$ arduino-cli lib search debouncer
+Name: "Debouncer"
     Author: hideakitai
     Maintainer: hideakitai
-    Sentence: Debounce library <span class="k">for</span> Arduino
-    Paragraph: Debounce library <span class="k">for</span> Arduino
+    Sentence: Debounce library for Arduino
+    Paragraph: Debounce library for Arduino
     Website: https://github.com/hideakitai
     Category: Timing
     Architecture: *
     Types: Contributed
-    Versions: <span class="o">[</span><span class="m">0</span>.1.0<span class="o">]</span>
-Name: <span class="s2">&quot;FTDebouncer&quot;</span>
+    Versions: [0.1.0]
+Name: "FTDebouncer"
     Author: Ubi de Feo
     Maintainer: Ubi de Feo, Sebastian Hunkeler
-    Sentence: An efficient, low footprint, fast pin debouncing library <span class="k">for</span> Arduino
-    Paragraph: This pin state supervisor manages debouncing of buttons and handles transitions between LOW and HIGH state, calling a <span class="k">function</span> and notifying your code of which pin has been activated or deactivated.
+    Sentence: An efficient, low footprint, fast pin debouncing library for Arduino
+    Paragraph: This pin state supervisor manages debouncing of buttons and handles transitions between LOW and HIGH state, calling a function and notifying your code of which pin has been activated or deactivated.
     Website: https://github.com/ubidefeo/FTDebouncer
     Category: Uncategorized
     Architecture: *
     Types: Contributed
-    Versions: <span class="o">[</span><span class="m">1</span>.3.0<span class="o">]</span>
-Name: <span class="s2">&quot;SoftTimer&quot;</span>
+    Versions: [1.3.0]
+Name: "SoftTimer"
     Author: Balazs Kelemen &lt;prampec+arduino@gmail.com&gt;
     Maintainer: Balazs Kelemen &lt;prampec+arduino@gmail.com&gt;
-    Sentence: SoftTimer is a lightweight pseudo multitasking solution <span class="k">for</span> Arduino.
-    Paragraph: SoftTimer enables higher level Arduino programing, yet easy to use, and lightweight. You are often faced with the problem that you need to <span class="k">do</span> multiple tasks at the same time. In SoftTimer, the programmer creates Tasks that runs periodically. This library comes with a collection of handy tools like blinker, pwm, debouncer.
+    Sentence: SoftTimer is a lightweight pseudo multitasking solution for Arduino.
+    Paragraph: SoftTimer enables higher level Arduino programing, yet easy to use, and lightweight. You are often faced with the problem that you need to do multiple tasks at the same time. In SoftTimer, the programmer creates Tasks that runs periodically. This library comes with a collection of handy tools like blinker, pwm, debouncer.
     Website: https://github.com/prampec/arduino-softtimer
     Category: Timing
     Architecture: *
     Types: Contributed
-    Versions: <span class="o">[</span><span class="m">3</span>.0.0, <span class="m">3</span>.1.0, <span class="m">3</span>.1.1, <span class="m">3</span>.1.2, <span class="m">3</span>.1.3, <span class="m">3</span>.1.5, <span class="m">3</span>.2.0<span class="o">]</span>
-</code></pre></div>
+    Versions: [3.0.0, 3.1.0, 3.1.1, 3.1.2, 3.1.3, 3.1.5, 3.2.0]</code></pre>
 <p>Our favourite is <code>FTDebouncer</code>, let's install it by running:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli lib install FTDebouncer
+<pre class="highlight"><code class="language-sh">$ arduino-cli lib install FTDebouncer
 FTDebouncer depends on FTDebouncer@1.3.0
 Downloading FTDebouncer@1.3.0...
 FTDebouncer@1.3.0 downloaded
 Installing FTDebouncer@1.3.0...
-Installed FTDebouncer@1.3.0
-</code></pre></div>
+Installed FTDebouncer@1.3.0</code></pre>
 <h2 id="using-the-daemon-mode-and-the-grpc-interface">Using the <code>daemon</code> mode and the gRPC interface<a class="headerlink" href="#using-the-daemon-mode-and-the-grpc-interface" title="Permanent link">&para;</a></h2>
 <p>Arduino CLI can be launched as a gRPC server via the <code>daemon</code> command.</p>
 <p>The <a href="https://github.com/arduino/arduino-cli/blob/master/client_example">client_example</a> folder contains a sample client code that shows how to interact with the gRPC server. Available
@@ -1387,20 +1270,15 @@ services and messages are detailed in the <a href="../rpc/commands">gRPC referen
 <p>To provide observability for the gRPC server activities besides logs, the <code>daemon</code> mode activates and exposes by default
 a <a href="https://prometheus.io/">Prometheus</a> endpoint (<a href="http://localhost:9090/metrics">http://localhost:9090/metrics</a>) that can be fetched for telemetry data
 like:</p>
-<div class="highlight"><pre><span></span><code># TYPE daemon_compile counter
-daemon_compile{buildProperties=&quot;&quot;,exportFile=&quot;&quot;,fqbn=&quot;arduino:samd:mkr1000&quot;,installationID=&quot;ed6f1f22-1fbe-4b1f-84be-84d035b6369c&quot;,jobs=&quot;0&quot;,libraries=&quot;&quot;,preprocess=&quot;false&quot;,quiet=&quot;false&quot;,showProperties=&quot;false&quot;,sketchPath=&quot;5ff767c6fa5a91230f5cb4e267c889aa61489ab2c4f70f35f921f934c1462cb6&quot;,success=&quot;true&quot;,verbose=&quot;true&quot;,vidPid=&quot;&quot;,warnings=&quot;&quot;} 1 1580385724726
+<pre class="highlight"><code class="language-text"># TYPE daemon_compile counter
+daemon_compile{buildProperties="",exportFile="",fqbn="arduino:samd:mkr1000",installationID="ed6f1f22-1fbe-4b1f-84be-84d035b6369c",jobs="0",libraries="",preprocess="false",quiet="false",showProperties="false",sketchPath="5ff767c6fa5a91230f5cb4e267c889aa61489ab2c4f70f35f921f934c1462cb6",success="true",verbose="true",vidPid="",warnings=""} 1 1580385724726
 
 # TYPE daemon_board_list counter
-daemon_board_list{installationID=&quot;ed6f1f22-1fbe-4b1f-84be-84d035b6369c&quot;,success=&quot;true&quot;} 1 1580385724833
-</code></pre></div>
+daemon_board_list{installationID="ed6f1f22-1fbe-4b1f-84be-84d035b6369c",success="true"} 1 1580385724833</code></pre>
 <p>The telemetry settings are exposed via the <code>telemetry</code> section in the CLI configuration:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">telemetry</span><span class="p">:</span>
-  <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-  <span class="nt">addr</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">:9090</span>
-</code></pre></div>
-                
-                  
-                
+<pre class="highlight"><code class="language-yaml">telemetry:
+  enabled: true
+  addr: :9090</code></pre>
                 
               
               
@@ -1417,66 +1295,56 @@ daemon_board_list{installationID=&quot;ed6f1f22-1fbe-4b1f-84be-84d035b6369c&quot
 <footer class="md-footer">
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../installation/" title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+          <a href="../installation/" title="Installation" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Installation
-              </span>
+              </div>
             </div>
           </a>
         
         
-          <a href="../command-line-completion/" title="Command line completion" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+          <a href="../command-line-completion/" title="Command line completion" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
                 Command line completion
-              </span>
+              </div>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
             </div>
           </a>
         
       </nav>
     </div>
   
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright 2020 ARDUINO SA (http://www.arduino.cc/)
-          </div>
-        
-        powered by
-        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs</a>
-      </div>
-      
-    </div>
-  </div>
+  <div id="arduino-footer"></div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      <script src="../assets/javascripts/vendor.581c8fc6.min.js"></script>
+      <script src="../assets/javascripts/bundle.66a8d459.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <link rel="stylesheet" href="https://cdn.arduino.cc/header-footer/prod/index.v2.css">
+      <script src="https://cdn.arduino.cc/header-footer/prod/index.v2.js"></script>
+      <script>window.auth=new arduinoHF.CustomAuth({no_auth:!0})</script>
+      <script>window.arduinoHeader=new window.arduinoHF.Header(document.getElementById("arduino-header"),window.auth,{env:"prod",style:"arduino",search:{tab:"reference"}}),window.arduinoFooter=new window.arduinoHF.Footer(document.getElementById("arduino-footer"),{env:"prod",style:"arduino"})</script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
       
         <script src="../js/version-select.js"></script>
+      
+        <script src="../search/main.js"></script>
       
     
   </body>
