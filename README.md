@@ -1,4 +1,4 @@
-# arduino-cli
+# arduino-cli foo
 
 ![cli-logo](./docs/img/CLI_Logo_small.png)
 
